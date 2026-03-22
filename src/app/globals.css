@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 218 30% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 218 30% 10%;
+    /* sky-600 = #0284c7 = hsl(199, 89%, 39%) */
+    --primary: 199 89% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 199 60% 96%;
+    --secondary-foreground: 199 30% 20%;
+    --muted: 199 30% 96%;
+    --muted-foreground: 215 16% 46%;
+    --accent: 199 40% 94%;
+    --accent-foreground: 199 30% 20%;
+    --border: 214 31% 91%;
+    --input: 214 31% 91%;
+    --ring: 199 89% 48%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Headings use display (Playfair Display) by default for sections */
+  h1, h2 {
+    font-family: var(--font-display), Georgia, serif;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+}
+
+@layer utilities {
+  /* Grain/noise texture overlay — apply as a pseudo-element parent */
+  .noise-bg {
+    position: relative;
+  }
+  .noise-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 180px 180px;
+    opacity: 0.035;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  /* Tight heading tracking */
+  .tracking-heading {
+    letter-spacing: -0.03em;
+  }
+
+  /* Body text optimized */
+  .text-body {
+    line-height: 1.7;
+  }
+
+  /* Diktsamling: paper grain texture */
+  .paper-bg {
+    position: relative;
+  }
+  .paper-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    opacity: 0.04;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 0;
+  }
+
+  /* Fade-in animation for diktsamling hero */
+  @keyframes dikt-fadein {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .dikt-animate {
+    animation: dikt-fadein 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .dikt-animate-delay-1 { animation-delay: 0.1s; }
+  .dikt-animate-delay-2 { animation-delay: 0.22s; }
+  .dikt-animate-delay-3 { animation-delay: 0.36s; }
+
+  /* Drop cap for Om samlingen */
+  .drop-cap::first-letter {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 0.75;
+    float: left;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+    color: #B4C7B2;
+  }
+}
