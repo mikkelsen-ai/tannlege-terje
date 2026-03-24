@@ -8,7 +8,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-displa
 export const metadata: Metadata = {
   title: 'Tannlege Bergen – Tannlege Terje Mikkelsen | Trygg behandling',
   description:
-    'Tannlege Terje Mikkelsen i Bergen – autorisert siden 1974, over 50 års erfaring. Helfo-avtale, spesialist på tannlegeskrekk og smertefri behandling. Book time online – svar innen én time. Tlf: 908 40 482.',
+    'Tannlege Terje Mikkelsen i Bergen – autorisert siden 1973, over 50 års erfaring. Helfo-avtale, spesialist på tannlegeskrekk og smertefri behandling. Book time online – svar innen én time. Tlf: 908 40 482.',
   keywords: [
     'tannlege bergen',
     'tannlege bergen sentrum',
@@ -38,7 +38,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Dentist',
   name: 'Tannlege Terje Mikkelsen',
-  description: 'Tannlege Terje Mikkelsen i Bergen sentrum – autorisert siden 1974 med over 50 års erfaring. Helfo-avtale og spesialisering på angstpasienter. Grunnlegger av Facebook-gruppen «Tannbehandling/økonomi» med 78 000+ medlemmer.',
+  description: 'Tannlege Terje Mikkelsen i Bergen sentrum – autorisert siden 1973 med over 50 års erfaring. Helfo-avtale og spesialisering på angstpasienter. Grunnlegger av Facebook-gruppen «Tannbehandling/økonomi» med 78 000+ medlemmer.',
   url: 'https://mikkelsen-tannklinikk.no',
   telephone: '+4790840482',
   address: {
@@ -67,7 +67,7 @@ const jsonLd = {
       closes: '14:00',
     },
   ],
-  foundingYear: '1974',
+  foundingYear: '1973',
   sameAs: ['https://www.facebook.com/groups/728297547903172/'],
   priceRange: '$$',
   aggregateRating: {

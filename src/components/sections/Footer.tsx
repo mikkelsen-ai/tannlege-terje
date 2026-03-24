@@ -22,7 +22,7 @@ export function Footer() {
               <span className="font-semibold text-slate-900">Tannlege Terje Mikkelsen</span>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed max-w-xs">
-              Trygg og smertefri tannbehandling i Bergen sentrum siden 2004. Helfo-avtale og
+              Trygg og smertefri tannbehandling på Torget i Bergen siden 1975. Helfo-avtale og
               spesialisering på angstpasienter.
             </p>
           </div>
@@ -67,10 +67,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:post@mikkelsen-tannklinikk.no"
+                  href="mailto:te-mikk@online.no"
                   className="hover:text-sky-600 transition-colors"
                 >
-                  post@mikkelsen-tannklinikk.no
+                  te-mikk@online.no
                 </a>
               </li>
             </ul>

@@ -22,7 +22,7 @@ const trustItems = [
   {
     icon: Clock,
     title: '50+ år erfaring',
-    desc: 'Autorisert tannlege siden 1974',
+    desc: 'Autorisert tannlege siden 1973',
   },
 ]
 
