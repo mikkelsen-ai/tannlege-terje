@@ -16,7 +16,7 @@ const points: Point[] = [
   {
     icon: GraduationCap,
     title: 'Solid faglig bakgrunn',
-    desc: 'Autorisert tannlege siden 1974. Etterutdanning innen oral kirurgi, implantatbehandling og angstmestring.',
+    desc: 'Autorisert tannlege siden 1973. Etterutdanning innen oral kirurgi, implantatbehandling og angstmestring.',
   },
   {
     icon: MapPin,
@@ -109,7 +109,7 @@ export function AboutTerje() {
               Møt Terje Mikkelsen
             </h2>
             <p className="mt-5 text-lg text-slate-600 leading-relaxed">
-              Autorisert tannlege siden 1974. I over 50 år har han behandlet bergensere med
+              Autorisert tannlege siden 1973. I over 50 år har han behandlet bergensere med
               ro og grundighet. Terje er kjent for sin evne til å sette selv de mest engstelige
               pasientene til ro.
             </p>

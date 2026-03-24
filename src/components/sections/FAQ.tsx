@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: 'Er det parkering i nærheten?',
-    a: 'Ja, nærmeste parkering er Bryggen P-Hus, ca. 5 minutters gange fra klinikken. Det er også busstopp for linjene 2, 3 og 5 rett utenfor. Klinikken er universelt utformet.',
+    a: 'Ja, nærmeste parkering er Bryggen P-Hus, ca. 5 minutters gange fra klinikken. Det er også busstopp for linjene 2, 3, 4 og 5 rett utenfor. Klinikken er universelt utformet.',
   },
   {
     q: 'Hva skjer hvis jeg må avbestille timen?',

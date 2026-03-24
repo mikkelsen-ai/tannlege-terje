@@ -52,7 +52,7 @@ export function AnxietySection() {
               med engstelige pasienter – og vi har konkrete tiltak som faktisk hjelper.
             </p>
             <p className="mt-4 text-slate-600 leading-relaxed">
-              Vi tar aldri snarveier, hastar aldri, og dommen er alltid til deg. Mange av
+              Vi tar aldri snarveier, hastar aldri, og du bestemmer hvor fort vi skal gå frem. Mange av
               våre mest lojale pasienter var de som var mest redde første gang de kom inn
               døren.
             </p>

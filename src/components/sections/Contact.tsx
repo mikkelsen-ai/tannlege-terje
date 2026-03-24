@@ -181,8 +181,8 @@ export function Contact() {
                 <Mail className="h-5 w-5 text-sky-600 mt-0.5 shrink-0" />
                 <div>
                   <p className="font-medium text-slate-900 text-sm">E-post</p>
-                  <a href="mailto:post@mikkelsen-tannklinikk.no" className="text-sm text-sky-600 hover:underline">
-                    post@mikkelsen-tannklinikk.no
+                  <a href="mailto:te-mikk@online.no" className="text-sm text-sky-600 hover:underline">
+                    te-mikk@online.no
                   </a>
                 </div>
               </div>
